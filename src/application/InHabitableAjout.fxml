@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="485.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InHabitableAjoutController">
+   <children>
+      <GridPane layoutX="38.0" layoutY="90.0" prefHeight="447.0" prefWidth="410.0" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="90.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="145.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="235.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="64.0" minHeight="9.0" prefHeight="64.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="33.0" prefWidth="220.0" text="        Adress exacte     :" textFill="#306e4e" />
+            <Label prefHeight="33.0" prefWidth="220.0" text="       La superficie          : " textAlignment="CENTER" textFill="#306e4e" GridPane.rowIndex="2" />
+            <Label prefHeight="33.0" prefWidth="220.0" text="             Prix                   :" textAlignment="CENTER" textFill="#306e4e" GridPane.rowIndex="4" />
+            <Label prefHeight="33.0" prefWidth="220.0" text="      est-il Negociable ?" textAlignment="CENTER" textFill="#306e4e" GridPane.rowIndex="5" />
+            <Label prefHeight="33.0" prefWidth="220.0" text="        Willaya                 :" textAlignment="CENTER" textFill="#306e4e" GridPane.rowIndex="1" />
+            <Label prefHeight="33.0" prefWidth="220.0" text="      Description               :" textAlignment="CENTER" textFill="#306e4e" GridPane.rowIndex="8" />
+            <Label prefHeight="33.0" prefWidth="220.0" text="     Lien vers les photos   : " textAlignment="CENTER" textFill="#306e4e" GridPane.rowIndex="9" />
+            <TextField fx:id="adress_exct" prefHeight="25.0" prefWidth="155.0" style="-fx-border-color: #73bf98;" GridPane.columnIndex="1" />
+            <TextField fx:id="superficiefield" prefHeight="25.0" prefWidth="155.0" style="-fx-border-color: #73bf98;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="prixfield" prefHeight="25.0" prefWidth="155.0" style="-fx-border-color: #73bf98;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="wilayachek" prefWidth="150.0" style="-fx-background-color: #b1d3bd;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Label prefHeight="33.0" prefWidth="220.0" text="    Type de transaction  :" textAlignment="CENTER" textFill="#306e4e" GridPane.rowIndex="3" />
+            <ComboBox fx:id="typetransfield" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #b1d3bd;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label prefHeight="33.0" prefWidth="220.0" text="      Statue juridique       : " textAlignment="CENTER" textFill="#306e4e" GridPane.rowIndex="6" />
+            <Label prefHeight="33.0" prefWidth="220.0" text="   Nombre des façades   :   " textAlignment="CENTER" textFill="#306e4e" GridPane.rowIndex="7" />
+            <TextField fx:id="statjuridiquefield" prefHeight="25.0" prefWidth="155.0" style="-fx-border-color: #73bf98;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ComboBox fx:id="nbfacadefield" maxWidth="155.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #b1d3bd;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <ComboBox fx:id="negofield" maxWidth="153.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #b1d3bd;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#filechooser" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #b1d3bd;" text="Attacher une Image" textFill="#1f2c20" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <TextArea fx:id="descripfield" maxHeight="70.0" prefHeight="79.0" prefWidth="241.0" style="-fx-border-color: #73bf98;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <Button layoutX="361.0" layoutY="537.0" mnemonicParsing="false" onAction="#addBien" prefHeight="33.0" prefWidth="100.0" style="-fx-background-color: #456651;" text="Confirmer" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#retour" prefHeight="33.0" prefWidth="89.0" style="-fx-background-color: #456651;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="warning" layoutX="38.0" layoutY="541.0" prefHeight="25.0" prefWidth="310.0" textFill="RED" />
+      <ImageView fitHeight="70.0" fitWidth="200.0" layoutX="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="209.0" layoutY="70.0" text="Terrain" textFill="#359061">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

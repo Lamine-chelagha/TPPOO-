@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="415.0" style="-fx-background-color: white; -fx-border-color: #28a4d5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VisualiserfromAdminController">
+   <children>
+      <GridPane layoutX="25.0" layoutY="160.0" prefHeight="458.0" prefWidth="379.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="166.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="209.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="121.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="144.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="171.0" minHeight="0.0" prefHeight="39.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="256.0" minHeight="0.0" prefHeight="39.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="341.0" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="395.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="395.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="395.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="395.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="42.0" prefWidth="163.0" text="Proprietaire            :" textFill="#366439" GridPane.rowIndex="2" />
+            <Label prefHeight="47.0" prefWidth="168.0" text="Nature transaction :" textFill="#366439" GridPane.rowIndex="3" />
+            <Label prefHeight="42.0" prefWidth="164.0" text="Prix initial               :" textFill="#366439" GridPane.rowIndex="4" />
+            <Label fx:id="lbl3" alignment="CENTER" prefHeight="36.0" prefWidth="220.0" style="-fx-border-color: #366439;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="lbl4" alignment="CENTER" prefHeight="34.0" prefWidth="216.0" style="-fx-border-color: #366439;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="lbl5" alignment="CENTER" prefHeight="33.0" prefWidth="213.0" style="-fx-border-color: #366439;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label prefHeight="34.0" prefWidth="165.0" text="Superficie               :" textFill="#366439" GridPane.rowIndex="1" />
+            <Label prefHeight="31.0" prefWidth="164.0" text="Adress exacte         :" textFill="#366439" />
+            <Label fx:id="lbl2" alignment="CENTER" prefHeight="33.0" prefWidth="213.0" style="-fx-border-color: #366439;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="lbl1" alignment="CENTER" prefHeight="38.0" prefWidth="222.0" style="-fx-border-color: #366439;" GridPane.columnIndex="1" />
+            <Label fx:id="lbl6" alignment="CENTER" prefHeight="33.0" prefWidth="213.0" style="-fx-border-color: #366439;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="lbl7" alignment="CENTER" prefHeight="33.0" prefWidth="213.0" style="-fx-border-color: #366439;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="lbl8" alignment="CENTER" prefHeight="33.0" prefWidth="213.0" style="-fx-border-color: #366439;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="lbl9" alignment="CENTER" prefHeight="33.0" prefWidth="213.0" style="-fx-border-color: #366439;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label prefHeight="31.0" prefWidth="167.0" text="Prix finale               :" textFill="#366439" GridPane.rowIndex="5" />
+            <Label prefHeight="31.0" prefWidth="168.0" text="Negociable            :" textFill="#366439" GridPane.rowIndex="6" />
+            <Label prefHeight="31.0" prefWidth="167.0" text="Date d'ajout          :" textFill="#366439" GridPane.rowIndex="7" />
+            <Label prefHeight="31.0" prefWidth="163.0" text="Wilaya                   :" textFill="#366439" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <Button fx:id="rtr" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#retourOnAction" prefHeight="8.0" prefWidth="104.0" style="-fx-border-color: #366439; -fx-background-color: white;" text="Retour" textFill="#366439">
+         <font>
+            <Font name="Monospaced Italic" size="18.0" />
+         </font></Button>
+      <ImageView fx:id="img" fitHeight="137.0" fitWidth="247.0" layoutX="168.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="499.0" prefWidth="611.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PropController">
+   <children>
+      <ListView fx:id="lview" layoutX="6.0" layoutY="62.0" prefHeight="378.0" prefWidth="574.0" style="-fx-background-color: white; -fx-border-color: #4f755c;" />
+      <Button layoutX="14.0" layoutY="451.0" mnemonicParsing="false" onAction="#voirOnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: white; -fx-border-color: #4f755c;" text="Voir les biens" textFill="#4f755c">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></Button>
+      <Button layoutX="6.0" layoutY="8.0" mnemonicParsing="false" onAction="#retourOnAction" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: white; -fx-border-color: #4f755c;" text="Retour" textFill="#4f755c">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="150.0" prefWidth="461.0" style="-fx-background-color: white; -fx-border-color: #28a4d5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VisualiserEchangeController">
+   <children>
+      <Button fx:id="rtr" layoutX="4.0" layoutY="6.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: white; -fx-border-color: #28a4d5;" text="Retour" textFill="#28a4d5">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="prix" layoutX="127.0" layoutY="55.0" prefHeight="33.0" prefWidth="260.0" promptText="Entrer la wilaya d'echange" style="-fx-background-color: white; -fx-border-color: #28a4d5;" />
+      <Button layoutX="127.0" layoutY="98.0" mnemonicParsing="false" onAction="#confirmOnAction" prefHeight="17.0" prefWidth="109.0" style="-fx-background-color: white; -fx-border-color: #28a4d5;" text="Confirmer" textFill="#28a4d5">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
